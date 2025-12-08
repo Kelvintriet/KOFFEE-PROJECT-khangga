@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;&display=swop");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 4rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Avatar Container */
+.avatar-container {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 20px; /* Adjust for spacing from the right */
+  text-align: center;
+  color: white;
+  margin-right: 220px;
+  margin-top: 25px;
+}
+
+.avatar-container .avatar {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #b74b4b;
+  margin-bottom: 5px; /* Space between image and name */
+}
+
+.avatar-container .avatar-name {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 7px;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  justify-content: space-evenly;
+  padding-top: 35px;
+  transition: 0.5s linear;
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  height: 100px;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.coffee_logo img {
+  height: 80px;
+  width: 80px;
+  margin: -25px;
+}
+
+/* Particles in Navbar */
+.navbar {
+  display: flex;
+  padding-top: 5px;
+  margin-right: 50px;
+}
+
+.navbar a {
+  padding: 15px 20px;
+  padding-top: 10px;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Hover Colour */
+.navbar a:hover {
+  background: #b74b4b;
+  border-radius: 0.3rem;
+  padding-top: 14px;
+  transition: 0.2s all linear;
+}
+
+.div i {
+  margin-left: 10px;
+}
+
+.div {
+  border: 2px solid #b74b4b;
+  height: 50px;
+  margin-right: -5px;
+  margin-top: -10px;
+  padding-top: 13px;
+  border-radius: 5px;
+  transition: 0.2s all linear;
+}
+
+.div:hover {
+  border: 2px solid rgb(225, 198, 124);
+}
+
+.div a {
+  color: white;
+  padding: 15px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.navbar b {
+  background-color: #b74b4b;
+  height: 48px;
+  margin-top: -15px;
+  padding-top: 14px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  padding-block: 5rem;
+  padding-top: 180px;
+  background: linear-gradient(135deg, #d56b6b, rgb(240, 220, 170));
+}
+
+.card__container {
+  display: grid;
+  row-gap: 3.5rem;
+}
+
+.card__article {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__article img {
+  height: 300px;
+  border-radius: 1.5rem;
+}
+
+.card__data {
+  width: 280px;
+  background-color: rgb(255, 255, 255);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+  border-radius: 1rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  /* opacity: 0; */
+  transition: opacity 1s 1s;
+}
+
+.card__description {
+  display: block;
+  font-size: 15px;
+  width: 200px;
+  font-family: cursive;
+  margin-bottom: 0.25rem;
+  color: rgba(0, 3, 6, 0.699);
+}
+
+.card__title {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  margin-bottom: 0.75rem;
+}
+
+.card__button {
+  text-decoration: none;
+  font-size: 10px;
+  background: #d38585;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.card__button:hover {
+  text-decoration: underline;
+  background: linear-gradient(135deg, #d56b6b, rgb(240, 220, 170));
+}
+
+.card__article:hover .card__data {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.card__article:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.card__article:not(:hover) {
+  animation: show-overflow 1s forwards;
+}
+
+.card__article:not(:hover) .card__data {
+  animation: remove-data 1s forwards;
+}
+
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline-start: 1rem;
+  }
+
+  .card__data {
+    width: 250px;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .container {
+    height: 100vh;
+  }
+
+  .card__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card__article img {
+    width: 300px;
+  }
+
+  .card__data {
+    width: 286px;
+    height: 275px;
+    padding-inline: 2.5rem;
+  }
+}
+
+.card__hours {
+  font-size: 12px;
+  color: #444;
+  margin-bottom: 0.75rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card__map {
+  width: 100%;
+  height: 120px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card__data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card__data .card__title {
+  margin-bottom: 0.3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card__map {
+    height: 120px;
+  }
+}

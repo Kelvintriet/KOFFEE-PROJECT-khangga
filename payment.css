@@ -1,0 +1,127 @@
+.payment-options {
+  max-width: 500px;
+  background-color: #fff8f8;
+  border: 1.5px solid #e6b6b6;
+  border-radius: 12px;
+  padding: 25px 20px;
+  margin-top: 130px;
+  margin-left: 470px;
+  box-shadow: 0 8px 18px rgba(183, 75, 75, 0.08);
+  transition: all 0.3s ease-in-out;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.payment-options h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  color: #663c3c;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  border: 1px solid #e2c6c6;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border 0.3s ease, background-color 0.3s ease;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(183, 75, 75, 0.1);
+}
+
+.payment-method:hover {
+  border-color: #b74b4b;
+  background-color: #fff0f0;
+  box-shadow: 0 4px 12px rgba(183, 75, 75, 0.2);
+}
+
+.payment-method input[type="radio"] {
+  margin-right: 14px;
+  transform: scale(1.3);
+  accent-color: #b74b4b;
+}
+
+.payment-method img {
+  width: 36px;
+  height: auto;
+  margin-right: 14px;
+  filter: drop-shadow(1px 1px 1px rgba(183, 75, 75, 0.3));
+}
+
+/* Checkout button */
+.payment-options .checkout-btn {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #b74b4b;
+  color: #fff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(183, 75, 75, 0.5);
+  letter-spacing: 0.05em;
+}
+
+.payment-options .checkout-btn:hover {
+  background-color: #a03f3f;
+  box-shadow: 0 8px 18px rgba(160, 63, 63, 0.7);
+  transform: translateY(-2px);
+}
+
+.payment-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.checkout-btn a {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #b74b4b;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: #b74b4b;
+  color: black;
+  transform: scale(1.05);
+}
+
+.back-btn {
+  color: #b74b4b;
+  background-color: #fff8f8;
+}
+
+.back-btn:hover {
+  background-color: #f5d6d6;
+  color: black;
+}

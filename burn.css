@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;&display=swop");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 4rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  justify-content: space-evenly;
+  padding-top: 35px;
+  transition: 0.5s linear;
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  height: 100px;
+}
+
+.coffee_logo img {
+  height: 80px;
+  width: 80px;
+  margin: -25px;
+}
+
+.navbar {
+  display: flex;
+  padding-top: 5px;
+}
+
+.navbar a {
+  padding: 15px 20px;
+  padding-top: 10px;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.navbar a:hover {
+  background: #b74b4b;
+  border-radius: 0.3rem;
+  padding-top: 14px;
+  transition: 0.3s all linear;
+}
+
+.nav_icon a {
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
+  color: rgb(255, 255, 255);
+}
+
+.nav_icon a:hover {
+  color: rgb(225, 198, 124);
+}
+
+.div i {
+  margin-left: 10px;
+}
+
+.div {
+  border: 2px solid #b74b4b;
+  height: 50px;
+  margin-top: -10px;
+  padding-top: 13px;
+  border-radius: 5px;
+  transition: 0.2s all linear;
+}
+
+.div:hover {
+  border: 2px solid rgb(225, 198, 124);
+}
+
+.div a {
+  color: white;
+  padding: 15px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.navbar b {
+  background-color: #b74b4b;
+  height: 48px;
+  margin-top: -14px;
+  padding-top: 14px;
+  border-radius: 5px;
+  margin-right: 15px;
+  margin-left: 15px;
+  transition: 0.2s all linear;
+}
+
+h1 {
+  padding-top: 200px;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.border {
+  width: 150px;
+  height: 4px;
+  background: #b74b4b;
+  margin: 13px auto;
+}
+
+/* === PAGE CONTAINER === */
+.page-container {
+  max-width: 960px;
+  margin: 70px auto;
+  padding: 50px 40px 60px;
+  background: #fffefb;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: #4a3636;
+  letter-spacing: 0.02em;
+  user-select: none;
+}
+
+/* === CAROUSEL CONTAINER === */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  margin-bottom: 55px;
+  background: #f9f5ef;
+  box-shadow: inset 0 0 25px rgba(225, 198, 124, 0.12),
+    0 12px 38px rgba(183, 75, 75, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.carousel:hover {
+  box-shadow: inset 0 0 35px rgba(225, 198, 124, 0.16),
+    0 18px 45px rgba(183, 75, 75, 0.14);
+}
+
+/* === SLIDES === */
+.carousel .slides {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+  cursor: grab;
+}
+.carousel .slides:active {
+  cursor: grabbing;
+}
+.carousel .slides img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  user-select: none;
+  filter: drop-shadow(0 3px 5px rgba(183, 75, 75, 0.1));
+  transition: filter 0.3s ease;
+}
+.carousel .slides img:hover {
+  filter: drop-shadow(0 6px 10px rgba(183, 75, 75, 0.15));
+}
+
+/* === NAVIGATION BUTTONS === */
+.carousel .prev,
+.carousel .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(145deg, #c36c6c, #9e3f3f);
+  border: none;
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 0 13px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(183, 75, 75, 0.35),
+    inset 0 1px 3px rgba(255, 255, 255, 0.25);
+  transition: background 0.35s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  z-index: 10;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 3px 7px rgba(183, 75, 75, 0.12));
+}
+
+.carousel .prev:hover,
+.carousel .next:hover {
+  background: linear-gradient(145deg, #a94444, #7c2f2f);
+  transform: translateY(-50%) scale(1.15);
+  box-shadow: 0 10px 25px rgba(183, 75, 75, 0.55),
+    inset 0 3px 6px rgba(255, 255, 255, 0.35);
+}
+
+.carousel .prev {
+  left: 20px;
+}
+
+.carousel .next {
+  right: 20px;
+}
+
+/* === SECTION BASE === */
+.section {
+  background: linear-gradient(
+    135deg,
+    rgba(225, 198, 124, 0.15),
+    rgba(255, 248, 236, 0.75)
+  );
+  padding: 36px 32px;
+  border-radius: 18px;
+  margin-bottom: 48px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 25px rgba(0, 0, 0, 0.07);
+}
+
+/* === SECTION HEADINGS === */
+.section h2 {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #b74b4b;
+  margin-bottom: 22px;
+  padding-left: 18px;
+  border-left: 4px solid rgb(225, 198, 124);
+  letter-spacing: 0.4px;
+  user-select: none;
+}
+
+/* === PARAGRAPHS === */
+.section p {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.13rem;
+  color: #483636;
+  margin-bottom: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+}
+
+/* === INFO LIST === */
+.section ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.section ul li {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.12rem;
+  margin-bottom: 15px;
+  color: #4a3636;
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+.section ul li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #b74b4b;
+  font-weight: 700;
+  font-size: 1.25rem;
+  top: 2px;
+}
+
+.section ul li strong {
+  color: #b74b4b;
+}
+
+/* === MAP === */
+.section.map iframe {
+  border: none;
+  border-radius: 14px;
+  width: 100%;
+  height: 390px;
+  box-shadow: 0 7px 22px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+
+.section.map iframe:hover {
+  box-shadow: 0 12px 38px rgba(0, 0, 0, 0.18);
+}
+
+/* === BACK LINK === */
+.back {
+  text-align: center;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 32px;
+  padding: 15px 30px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+  user-select: none;
+  color: #b74b4b;
+  background-color: #fff;
+  border: 2px solid #b74b4b;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.back-link:hover {
+  background-color: #f5d6d6;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 640px) {
+  .page-container {
+    margin: 40px 15px;
+    padding: 30px 25px 40px;
+  }
+  .section h2 {
+    font-size: 1.5rem;
+  }
+  .section p,
+  .section ul li {
+    font-size: 1rem;
+  }
+  .carousel .prev,
+  .carousel .next {
+    font-size: 2rem;
+    padding: 0 10px;
+    width: 46px;
+    height: 46px;
+  }
+}

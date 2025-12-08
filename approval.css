@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Trebuchet+MS&display=swap");
+
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  background: #fff8f8;
+  color: #663c3c;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  background: white;
+  border-radius: 15px;
+  padding: 40px 50px;
+  box-shadow: 0 10px 25px rgba(183, 75, 75, 0.15);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #b74b4b;
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 35px;
+  line-height: 1.5;
+  color: #4a2c2c;
+}
+
+.redirect-msg {
+  font-size: 0.9rem;
+  color: #a65c5c;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 0.6rem 2rem;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #b74b4b;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #8c3737;
+  transform: scale(1.05);
+}
+
+.icon-check {
+  font-size: 4rem;
+  color: #b74b4b;
+  margin-bottom: 20px;
+}
+
+/* 📱 Payment Page Responsive Enhancements */
+@media (max-width: 768px) {
+  body {
+    padding: 30px 20px;
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 30px 20px;
+    border-radius: 12px;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .redirect-msg {
+    font-size: 0.85rem;
+    margin-top: 8px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.6rem;
+  }
+
+  .icon-check {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="—Pngtree—coffee_3626459.png" />
+    <title>Products - Koffee</title>
+    <link rel="stylesheet" href="product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="coffee_logo">
+        <img
+          src="—Pngtree—coffee_3626459.png"
+          alt=""
+          style="margin-right: 10px"
+        />
+      </a>
+
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <b
+          ><li><a href="product.html">Products</a></li></b
+        >
+        <li><a href="about.html">About K'offee</a></li>
+        <li><a href="customer.html">Customers</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <li>
+        <a href="wishlist.html" title="Wishlist">
+          <i class="fa-solid fa-heart"></i>
+        </a>
+      </li>
+      <div class="div">
+        <p>
+          <a href="giohang.html"
+            >Cart<i class="fa-solid fa-cart-shopping"></i
+          ></a>
+        </p>
+      </div>
+      <div id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>
+          <strong>Total: $<span id="cart-total">0.00</span></strong>
+        </p>
+      </div>
+
+      <div class="search_box">
+        <input
+          type="search"
+          name=""
+          id="infoSearch"
+          placeholder="Search Here..."
+        />
+        <button id="btnSearch">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </header>
+
+    <h1>My Products</h1>
+    <div class="border"></div>
+
+    <section
+      id="filter-sort-section"
+      style="max-width: 1200px; margin: 20px auto"
+    >
+      <div class="filters">
+        <label>Price:</label>
+        <select id="filterPrice">
+          <option value="all">All</option>
+          <option value="0-5">$0 - $5</option>
+          <option value="5-15">$5 - $15</option>
+          <option value="15-25">$15 - $25</option>
+        </select>
+
+        <label>Roast:</label>
+        <select id="filterRoast">
+          <option value="all">All</option>
+          <option value="light">Light</option>
+          <option value="medium">Medium</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+
+      <div class="sort">
+        <label>Sort By:</label>
+        <select id="sortProducts">
+          <option value="default">Default</option>
+          <option value="newest">Newest</option>
+          <option value="priceLowHigh">Price: Low to High</option>
+          <option value="priceHighLow">Price: High to Low</option>
+        </select>
+      </div>
+    </section>
+
+    <div id="products"></div>
+    <div id="promoTimer"></div>
+    <div class="slogan">
+      <p>
+        - The smell of fresh-made coffee is one of the world's greatest
+        inventions -
+      </p>
+      <p>Live long and prosper!</p>
+      <i class="fa-duotone fa-solid fa-mug-hot"></i>
+    </div>
+    <button id="backToTopBtn">↑</button>
+    <!-- Quick View Modal -->
+    <div id="quickViewModal" class="quick-view-modal">
+      <div class="quick-view-content">
+        <span class="close-modal">&times;</span>
+        <img id="modalImage" src="" alt="Product Image" />
+        <h2 id="modalName"></h2>
+        <div class="rating-row">
+          <span id="modalStars">⭐⭐⭐⭐☆</span>
+          <span id="modalReviews">(123 reviews)</span>
+        </div>
+        <p id="modalDescription" class="description"></p>
+        <p id="modalPrice"></p>
+        <button id="modalAddToCart">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+  <script src="product.js"></script>
+</html>
