@@ -13,11 +13,11 @@ This repository contains the KOFFEE project by khangga. It includes the source f
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Kelvintriet/KOFFEE-PROJECT-khangga.git
+   git clone https://github.com/dkhangpv/KOFFEE-PROJECT.git
    ```
 2. Change into the project directory:
    ```bash
-   cd KOFFEE-PROJECT-khangga
+   cd KOFFEE-PROJECT
    ```
 3. If the project uses Node.js tools (optional):
    ```bash
@@ -34,10 +34,10 @@ This repository contains the KOFFEE project by khangga. It includes the source f
   npm run dev
   ```
 
-## Project Structure (example)
+## Project Structure 
 - `index.html` — main HTML file
-- `src/` — source files (JavaScript, CSS, assets)
-- `assets/` — images and static assets
+- `.js and .css` — logic files and style files
+- `.png` — images and static assets
 
 Adjust paths to match the repository layout.
 
